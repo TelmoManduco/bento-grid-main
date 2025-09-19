@@ -1,64 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 
 :root {
-    --purple-100: #dacffc;
-    --purple-500: #7650dc;
-    --yellow-100: #f9eee1;
-    --yellow-500: #ffcb6b;
-    --black: #121212;
+  --purple-100: #dacffc;
+  --purple-500: #7650dc;
+  --yellow-100: #f9eee1;
+  --yellow-500: #ffcb6b;
+  --black: #121212;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+    min-height: 100vh;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.125rem;
-    font-family: "DM Sans", sans-serif; 
-    color: var(--black);
     line-height: 1.5;
-    /*
-    ### Font
-
-- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
-- Weights: 400, 500
-    */
+    color: var(--black);
 }
 
-.main {
-    padding: 2rem 1.5rem;
-    margin: 0 auto;
-    max-width: 375px;
+.container {
+  padding: 2rem 1.5rem;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.grid-area {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
 }
 
-.grid-card {
-    text-align: center;
-    background-color: aqua;
-    padding: 1.5rem;
-    border-radius: 1rem;
+.card {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.grid-card img {
-    width: 100%;
+.card img {
+  max-width: 100%;
+    display: block;
 }
 
 .card-01 {
-    color: white;
-    background-color: var(--purple-500);
+  background: var(--purple-500);
+  color: #fff;
 }
-
+.card-01 h1 {
+  font-size: 2.5rem;
+}
 .card-01 span {
-    color: var(--yellow-500);
+  color: var(--yellow-500);
+}
+.card-01 p {
+  color: var(--yellow-100);
 }
 
-.card-01 p {
-    color: var(--yellow-100);
+.card-02 {
+  background: white;
+  border: 3px solid rgba(211, 211, 211, 0.536);
+  text-align: left;
+}
+
+.card-03 {
+  background: var(--yellow-500);
+  text-align: left;
+}
+.card-03 img {
+  max-width: 60%;
+}
+
+.card-04 {
+  background: var(--purple-100);
+}
+.card-04 p {
+  font-size: 1rem;
+}
+
+.card-05 {
+  background: var(--purple-500);
+  color: #fff;
+}
+
+.card-06 {
+  background: var(--purple-100);
+  text-align: left;
+}
+.card-06 h2 {
+  font-size: 3rem;
+}
+
+.card-07 {
+  background: var(--yellow-100);
+  text-align: left;
+}
+.card-07 span {
+  color: var(--purple-500);
+}
+.card-07 img {
+  max-width: 50%;
+}
+
+.card-08 {
+  background: var(--yellow-500);
+  text-align: left;
+}
+.card-08 img {
+  max-width: 70%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "c7 c1 c1 c4"
+      "c7 c2 c3 c4"
+      "c7 c6 c5 c5";
+    gap: 1.5rem;
+  }
+
+  .card-01 { grid-area: c1; }
+  .card-02 { grid-area: c2; }
+  .card-03 { grid-area: c3; }
+  .card-04 { grid-area: c4; }
+  .card-05 { grid-area: c5; }
+  .card-06 { grid-area: c6; }
+  .card-07 { grid-area: c7; }
+  .card-08 { grid-area: c8; }
 }
