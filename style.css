@@ -193,7 +193,30 @@ img {
    }
 
    @media (min-width: 800px) {
-    .card-01 {
-      grid
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: 
+      "c7 c1 c1 c4"
+      "c7 c2 c3 c4"
+      "c8 c6 c5 c5";
     }
+
+    .card-01 { grid-area: c1;}
+    .card-02 { grid-area: c2;}
+    .card-03 { grid-area: c3;}
+    .card-04 { grid-area: c4;}
+    .card-05 { grid-area: c5;}
+    .card-06 { grid-area: c6;}
+    .card-07 { grid-area: c7;}
+    .card-08 { grid-area: c8;}
+
+    .card-05 {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .card-05 img {
+      width: 150px;
+    }
+
    }
