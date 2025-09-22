@@ -2,61 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bento Grid Layout</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Frontend Mentor Bento Grid Challenge</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-    <main class="container">
-        <section class="grid">
-            <article class="card card-01">
-                <h1>Social Media <span>10x</span> Faster with AI</h1>
-                <img src="images/illustration-five-stars.webp" alt="5 star reviews">
+
+    <section class="container" aria-labelledby="social-heading">
+
+        <div class="card">
+            <h1 id="social-heading">Social Media <span class="tenX">10x</span> <span class="italic">Faster</span> with
+                AI</h1>
+            <div>
+                <div class="img-wrapper">
+                    <img src="images/illustration-five-stars.webp" alt="five stars icon">
+                </div>
                 <p>Over 4,000 5-star reviews</p>
-            </article>
+            </div>
+        </div>
 
-            <article class="card card-02">
-                <img src="images/illustration-multiple-platforms.webp" alt="Multiple platforms">
-                <h2>Manage multiple accounts and platforms</h2>
-            </article>
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="images/illustration-multiple-platforms.webp" alt="instagram icon and x icon">
+            </div>
+            <h2>Manage multiple accounts and platforms.</h2>
+        </div>
 
-            <article class="card card-03">
-                <h2>Maintain a consistent posting schedule</h2>
-                <img src="images/illustration-consistent-schedule.webp" alt="Consistent schedule">
-            </article>
+        <div class="card">
+            <h2>Maintain a consistent posting schedule.</h2>
+            <div class="img-wrapper">
+                <img src="images/illustration-consistent-schedule.webp" alt="icon of calendar">
+            </div>
+        </div>
 
-            <article class="card card-04">
-                <h2>Schedule to social media</h2>
-                <img src="images/illustration-schedule-posts.webp" alt="Scheduling posts">
-                <p>Optimize post timings to publish content at the perfect time for your audience</p>
-            </article>
-            
-            <article class="card card-05">
-                <img src="images/illustration-grow-followers.webp" alt="Grow followers">
-                <h2>Grow followers with non-stop content</h2>
-            </article>
+        <div class="card">
+            <h2>Schedule to social media.</h2>
+            <div class="img-wrapper">
+                <img src="images/illustration-schedule-posts.webp" alt="weekly graph showing activity">
+            </div>
+            <p>Optimize post timings to publish content at the perfect time for your audience.</p>
+        </div>
 
-            <article class="card card-06">
-                <h2>&gt;56%</h2>
-                <p>Faster audience growth</p>
-                <img src="images/illustration-audience-growth.webp" alt="Audience growth">
-            </article>
+        <div class="card">
+            <div class="img-wrapper">
+                <img src="images/illustration-grow-followers.webp" alt="icon showing users followers growth">
+            </div>
+            <h3>Grow followers with non-stop content.</h3>
+        </div>
 
-            <article class="card card-07">
-                <h2>Create and schedule content <span>quicker.</span></h2>
-                <img src="images/illustration-create-post.webp" alt="Create posts">
-            </article>
+        <div class="card">
+            <div>
+                <h4>>56%</h4>
+                <p>faster audience growth</p>
+            </div>
+            <div class="img-wrapper">
+                <img src="images/illustration-audience-growth.webp" alt="three avatar icons">
+            </div>
+        </div>
 
+        <div class="card">
+            <h3>Create and schedule content <span class="italic">quicker.</span></h3>
+            <div class="img-wrapper">
+                <img src="images/illustration-create-post.webp" alt="create post icon">
+            </div>
+        </div>
 
-            <article class="card card-08">
-                <h2>Write your content using AI</h2>
-                <img src="images/illustration-ai-content.webp" alt="AI writing content">
-            </article>
-        </section>
-    </main>
+        <div class="card">
+            <h3>Write your content using AI.</h3>
+            <div class="img-wrapper">
+                <img src="images/illustration-ai-content.webp" alt="messages with ai icon">
+            </div>
+        </div>
+
+    </section>
+   
+
 </body>
 
 </html>
