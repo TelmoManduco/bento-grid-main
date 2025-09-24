@@ -31,6 +31,8 @@ img {
 
 .main {
     background-color: #F6F5F6;
+    max-width: 425px;
+    margin: 0 auto;
     display: grid;
     gap: var(--space-lg);
     padding: var(--space-lg) var(--space-sm) var(--space-xl);
@@ -39,7 +41,7 @@ img {
 .card {
     display: flex;
     flex-direction: column;
-    border-radius: 0.625rem;
+    border-radius: 0.5rem;
 }
 
 .card:nth-child(1) {
@@ -49,7 +51,7 @@ img {
     gap: var(--space-md);
     padding: var(--space-xl) var(--space-lg);
 
-    h1, p {
+    h1 {
         color: white;
     }
 
@@ -66,6 +68,7 @@ img {
     }
 
     p {
+        color: var(--purple-light);
         margin-top: var(--space-xs);
     }
 }
@@ -84,10 +87,10 @@ img {
     background-color: var(--yellow);
     gap: var(--space-sm);
     padding: var(--space-sm) var(--space-sm) 0;
-
+    overflow: hidden;
     .img-wrapper {
         max-width: 13rem;
-        max-height: 9.813rem;
+        max-height: 7.813rem;
     }
 }
 
@@ -134,7 +137,7 @@ img {
         max-width: 11.188rem;
     }
     
-    div p {
+     p {
         margin-top: 0.938rem;
     }
 }
@@ -168,28 +171,28 @@ img {
 
 h1 {
     text-align: center;
-    font-size: 2.875rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 2.625rem;
 }
 
 h2 {
     font-size: 1.625rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.5rem;
     letter-spacing: -0.098rem;
 }
 
 h3 {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.75rem;
     letter-spacing: -0.12rem;
 }
 
 h4 {
     font-size: 2.875rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 2.625rem;
     letter-spacing: -0.115rem
 }
@@ -203,9 +206,9 @@ p {
 
 /* ------------- Media Queries ------------- */
 
-/* 768px = 48rem */
 @media (width >= 768px) {
     .main {
+        max-width: 600px;
         padding: 3.25rem 2.5rem;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -214,8 +217,7 @@ p {
         " card4 card4 "
         " card5 card5 "
         " card6 card6 "
-        " card7 card8 "
-        ;
+        " card7 card8 ";
 
         .card:nth-child(1) {
             grid-area: card1;
@@ -228,8 +230,11 @@ p {
             padding: var(--space-md);
 
             h2 {
-                max-width: 13rem;
+                max-width: 10rem;
             }
+
+          
+    }
         }
 
         .card:nth-child(3) {
