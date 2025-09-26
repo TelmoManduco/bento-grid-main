@@ -17,7 +17,7 @@ The goal of this project was to practice responsive layouts using **HTML and CSS
 
 ## 🎯 Frontend Mentor Solution
 
-🔗 [Frontend Mentor](https://www.frontendmentor.io/challenges/bento-grid-RMydElrlOj)
+🔗 [Frontend Mentor](https://www.frontendmentor.io/solutions/bento-grid-main-solution-Kd9bvp7IEa)
 
 ---
 
